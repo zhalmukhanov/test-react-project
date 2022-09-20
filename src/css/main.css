@@ -1,0 +1,87 @@
+.hello_body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal_bg {
+    background-color: #4071f4;
+
+    position: fixed;
+
+    width: 100vw;
+    height: 100vh;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.modal-content {
+    border-radius: 8px;
+}
+
+.form_modal {
+    display: flex;
+    flex-direction: column;
+}
+
+.title_start{
+    padding-bottom: -5px;
+    border-bottom: 5px solid #4071f4;
+}
+input {
+    border:none;
+    outline: none;
+    padding: 5px 10px;
+}
+
+input[type=email],input[type=password], input[type=text] {
+    width: 100%;
+    border:none;
+    outline: none;
+
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: left;
+
+    border-bottom: 1px solid #757575;
+    padding: 15px 0;
+    padding-left: 40px
+}
+
+input[type=email]{
+    background-image: url("../svg/mail-svgrepo-com.svg");
+}
+input[type=text]{
+    background-image: url("../svg/avatar-svgrepo-com.svg");
+}
+input[type=password]{
+    background-image: url("../svg/lock-svgrepo-com.svg");
+}
+.btn_modal{
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+}
+input[type=submit]{
+    background-color: #4071f4;
+}
+
+
+.modal_footer{
+
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.error {
+    display: none;
+    color: red;
+}
+
+a {
+    text-decoration: none;
+}
